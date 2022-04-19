@@ -1,0 +1,11 @@
+{
+  "company_add_new_item": "ເພີ່ມບໍລິສັດໃໝ່",
+  "company_list": "ລາຍຊື່ບໍລິສັດ",
+  "department_add_new_item": "ເພີ່ມພະແນກໃໝ່",
+  "department_list": "ລາຍຊື່ພະແນກ",
+  "position_add_new_item": "ເພີ່ມຕຳແໜ່ງໃໝ່",
+  "position_list": "ລາຍຊື່ຕຳແໜ່ງ",
+  "edit_company": "ແກ້ໄຂຊື່ບໍລິສັດ",
+  "edit_department": "ແກ້ໄຂພະແນກ",
+  "edit_position": "ແກ້ໄຂຕຳແໜ່ງ"
+}

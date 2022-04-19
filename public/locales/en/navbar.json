@@ -1,0 +1,14 @@
+{
+  "dashboard": "Dashboard",
+  "loans": "Loans",
+  "customer": "Customer",
+  "setting": "Setting",
+  "profile": "Profile",
+  "logout": "Logout",
+  "position": "Position",
+  "company": "Company",
+  "department": "Department",
+  "dark": "Dark",
+  "light": "Light",
+  "user": "User"
+}

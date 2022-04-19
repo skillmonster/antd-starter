@@ -1,0 +1,9 @@
+{
+  "editor.formatOnSave": true,
+  "git.ignoreLimitWarning": true,
+  "vetur.format.defaultFormatter.js": "vscode-typescript",
+  "prettier.singleQuote": true,
+  "prettier.jsxSingleQuote": false,
+  "typescript.preferences.quoteStyle": "double",
+  "prettier.quoteProps": "preserve"
+}

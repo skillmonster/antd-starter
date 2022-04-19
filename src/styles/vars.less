@@ -1,0 +1,131 @@
+// This file will contain all varibales, our custom varibales and
+//those from Ant Design which we want to override.
+@import '~antd/lib/style/themes/default.less';
+@primary-color: #263b8c;
+@secondary-color: #e3503f;
+@mentions-dropdown-bg: #f8f8f8;
+@layout-body-background: #f8f8f8;
+@select-item-selected-option-color: @primary-color;
+@processing-color: @primary-color;
+@select-item-selected-bg: @background-color-base;
+@btn-primary-bg: @primary-color;
+@layout-trigger-background: @white;
+@font-family: 'defago-noto-sans-lao';
+:root {
+  --PC: @primary-color;
+}
+.contact-bar {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.sidebar {
+  height: 100vh;
+}
+.ant-layout-header.navbar {
+  padding-left: 30px;
+  padding-right: 0;
+  background-color: @primary-color;
+  .anticon {
+    color: @white;
+  }
+  .ant-menu {
+    height: @layout-header-height;
+    font-weight: bold;
+    color: @white;
+    background-color: @primary-color;
+    font-size: 16px;
+    > .ant-menu-item a {
+      color: @white;
+    }
+  }
+  .ant-menu-horizontal {
+    border-bottom: 0;
+  }
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu-selected,
+  .ant-menu-item-selected,
+  .ant-menu-submenu:hover,
+  .ant-menu-item-active,
+  .ant-menu-submenu-active,
+  .ant-menu-item-open,
+  .ant-menu-submenu-open,
+  .ant-menu-item:hover::after,
+  .ant-menu-submenu:hover::after,
+  .ant-menu-item-active::after,
+  .ant-menu-submenu-active::after,
+  .ant-menu-item-open::after,
+  .ant-menu-submenu-open::after,
+  .ant-menu-item-selected::after,
+  .ant-menu-submenu-selected::after {
+    color: @secondary-color;
+  }
+  .ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+  .ant-menu-submenu:hover::after,
+  .ant-menu-item-active::after,
+  .ant-menu-submenu-active::after,
+  .ant-menu-item-open::after,
+  .ant-menu-submenu-open::after,
+  .ant-menu-item-selected::after,
+  .ant-menu-submenu-selected::after {
+    border-bottom: 2px solid @secondary-color;
+  }
+  .ant-menu-item:hover {
+    .ant-menu-item-active {
+      color: @secondary-color;
+    }
+  }
+  .ant-menu-light {
+    .ant-menu-item-active {
+      color: @secondary-color;
+    }
+    .ant-menu:not(.ant-menu-inline) {
+      .ant-menu-submenu-open {
+        color: @secondary-color;
+      }
+    }
+    .ant-menu-submenu-active {
+      color: @secondary-color;
+    }
+    .ant-menu-submenu-title:hover {
+      color: @secondary-color;
+    }
+  }
+}
+.ant-card {
+  .ant-card-head-title {
+    padding: 16px 0 5px 0;
+  }
+}
+
+.ant-card.laoit-dev-card.laoit-dev-card-add {
+  .ant-card-head-title {
+    padding: 5px 0 5px 0;
+  }
+  .ant-card-body {
+    padding: 0;
+  }
+}
+
+.ant-card-head {
+  border-bottom: 0;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::before {
+  content: none !important;
+}
+
+.ant-form-item-label
+  > label.ant-form-item-required:not(.ant-form-item-required-mark-optional)::after {
+  display: inline-block;
+  margin-right: 4px;
+  color: #ff4d4f;
+  font-size: 14px;
+  font-family: SimSun, sans-serif;
+  line-height: 1;
+  content: '*';
+}
+
+.ant-layout-sider-trigger {
+  color: @primary-color;
+  background: @layout-trigger-background;
+}

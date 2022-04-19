@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'defago-noto-sans-lao';
+  src: url('./fonts/defago-noto-sans-lao.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@import './vars.less';
+@import './login.less';
+* {
+  font-family: 'defago-noto-sans-lao';
+}
+
+#root,
+.site-layout-height {
+  height: 100%;
+}
+.main-menu-inner {
+  height: 100%;
+  max-height: 100vh;
+  overflow: hidden;
+}
+
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-item:hover::after,
+.ant-menu-horizontal:not(.ant-menu-dark) > .ant-menu-submenu:hover::after {
+  border-bottom: 0;
+}
+
+.case_forgetting {
+  font-size: 12px;
+  > * {
+    text-align: center;
+  }
+}
+.box-shadow(@string: 0px 8px 20px 10px rgb(109 117 135 ,0.08)) {
+  // -webkit-box-shadow: @string;
+  // -moz-box-shadow: @string;
+  box-shadow: @string;
+}
+.ant-card {
+  box-shadow: 0px 8px 20px 10px rgba(109, 117, 135, 8%);
+}
+.ant-card.laoit-dev-card {
+  .ant-card-head {
+    border-bottom: 0;
+    .ant-card-head-title {
+      border-bottom: 1px solid @primary-color;
+      flex: none;
+      font-size: 26px;
+    }
+  }
+}
+.ant-card-bordered {
+  border-radius: 4px solid #f0f0f0;
+}
+
+#components-layout-demo-top-side-2 .logo {
+  float: left;
+  width: 120px;
+  height: 31px;
+  margin: 16px 24px 16px 0;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.ant-row-rtl #components-layout-demo-top-side-2 .logo {
+  float: right;
+  margin: 16px 0 16px 24px;
+}
